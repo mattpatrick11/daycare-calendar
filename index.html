@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Patrick Kids — Daycare Weekly Calendar</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f0f7ff;
+      color: #333;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 30px 20px 20px;
+      background: linear-gradient(135deg, #4e9af1, #7c3aed);
+      border-radius: 16px;
+      color: white;
+      margin-bottom: 30px;
+    }
+    header h1 { font-size: 2em; margin-bottom: 6px; }
+    header p { opacity: 0.85; font-size: 1em; }
+    .kids-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .kid-section {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+    .kid-section h2 {
+      font-size: 1.4em;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .week-label {
+      font-size: 0.85em;
+      color: #888;
+      margin-bottom: 16px;
+    }
+    .letter-badge {
+      display: inline-block;
+      background: #fef3c7;
+      color: #92400e;
+      font-weight: bold;
+      border-radius: 8px;
+      padding: 4px 12px;
+      margin-bottom: 12px;
+      font-size: 0.95em;
+    }
+    .special-day {
+      background: #fdf2f8;
+      border-left: 4px solid #ec4899;
+      padding: 10px 14px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      font-size: 0.95em;
+    }
+    .special-day strong { color: #be185d; }
+    .day-list { list-style: none; }
+    .day-list li {
+      display: flex;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid #f0f0f0;
+      align-items: flex-start;
+    }
+    .day-list li:last-child { border-bottom: none; }
+    .day-name {
+      font-weight: 700;
+      min-width: 90px;
+      color: #4e9af1;
+      font-size: 0.9em;
+      padding-top: 2px;
+    }
+    .day-activity { font-size: 0.95em; line-height: 1.4; }
+    .reminders {
+      margin-top: 16px;
+      background: #f0fdf4;
+      border-left: 4px solid #22c55e;
+      padding: 12px 14px;
+      border-radius: 8px;
+      font-size: 0.88em;
+      line-height: 1.6;
+      color: #166534;
+    }
+    .reminders strong { display: block; margin-bottom: 4px; }
+    .updated {
+      text-align: center;
+      color: #aaa;
+      font-size: 0.8em;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🍎 Patrick Kids Daycare</h1>
+  <p>Weekly classroom calendar — updated automatically</p>
+</header>
+
+<div class="kids-grid">
+
+  <!-- NORA -->
+  <div class="kid-section">
+    <h2>👧 Nora</h2>
+    <div class="week-label">Week of March 2–6, 2025</div>
+
+    <div class="letter-badge">Letter of the Week: Bb</div>
+
+    <div class="special-day">
+      <strong>🧸 Special Day: Teddy Bear Day</strong><br/>
+      Bring your favorite teddy bear to school to be used throughout the day!
+    </div>
+
+    <ul class="day-list">
+      <li>
+        <span class="day-name">Monday</span>
+        <span class="day-activity">Intro to Letter B &amp; celebration of Dr. Seuss</span>
+      </li>
+      <li>
+        <span class="day-name">Tuesday</span>
+        <span class="day-activity">Music, Tracing Letter B, Baseball art ⚾</span>
+      </li>
+      <li>
+        <span class="day-name">Wednesday</span>
+        <span class="day-activity">Bat craft &amp; Bingo 🦇</span>
+      </li>
+      <li>
+        <span class="day-name">Thursday</span>
+        <span class="day-activity">Teddy Bear Day 🧸</span>
+      </li>
+      <li>
+        <span class="day-name">Friday</span>
+        <span class="day-activity">Butterflies 🦋, Bugs 🐛 &amp; Tracing B</span>
+      </li>
+    </ul>
+
+    <div class="reminders">
+      <strong>⭐ Reminders</strong>
+      Please place all heat-ups in a microwaveable container — no glass, kid-friendly only.<br/>
+      If possible, send your child with a filled water cup (will be refilled as needed).
+    </div>
+  </div>
+
+  <!-- SECOND KID - placeholder -->
+  <div class="kid-section">
+    <h2>👦 Kid #2</h2>
+    <div class="week-label">Waiting for first newsletter...</div>
+    <p style="color:#aaa; font-size:0.95em; margin-top:10px;">Send a screenshot from this class and I'll fill this in automatically!</p>
+  </div>
+
+</div>
+
+<p class="updated">Last updated: March 2, 2026 by Tuchus 🐶</p>
+
+</body>
+</html>
